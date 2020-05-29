@@ -10,4 +10,4 @@ RUN pip3 install Pillow==6.2.2
 RUN cd /tmp && wget https://github.com/protocolbuffers/protobuf/releases/download/v3.12.1/protoc-3.12.1-linux-x86_64.zip && unzip protoc-3.12.1-linux-x86_64.zip -d ./protobuf && cd protobuf/bin && cp protoc /usr/bin/protoc
 RUN chmod 755 /usr/bin/protoc
 RUN echo 'eval "$(ssh-agent)"' >> /home/node/.bashrc
-RUN echo 'ssh-add ~/home/node/.ssh/*_rsa' >> /home/node/.bashrc
+RUN echo 'ssh-add /home/node/.ssh/*_rsa' >> /home/node/.bashrc
