@@ -4,7 +4,10 @@ LABEL maintainer="askldfhjg@gmail.com"
 USER root
 
 RUN npm install -g gulp layadcc
-RUN apt-get update -y && apt-get -y install zip python3-pip vim
+
+RUN apt-get update -y && apt-get -y install zip python3-pip vim locales && rm -rf /var/lib/apt/lists/* && localedef -i zh_CN -c -f UTF-8 -A /usr/share/locale/locale.alias zh_CN.UTF-8
+ENV LANG zh_CN.UTF-8
+
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get -y install git-lfs
 RUN pip3 install Pillow==6.2.2
 RUN cd /tmp && wget https://github.com/protocolbuffers/protobuf/releases/download/v3.12.1/protoc-3.12.1-linux-x86_64.zip && unzip protoc-3.12.1-linux-x86_64.zip -d ./protobuf && cd protobuf/bin && cp protoc /usr/bin/protoc
