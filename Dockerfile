@@ -5,7 +5,7 @@ USER root
 
 RUN npm install -g gulp layadcc
 
-RUN apt-get update -y && apt-get -y install zip python3-pip vim locales && rm -rf /var/lib/apt/lists/* && localedef -i zh_CN -c -f UTF-8 -A /usr/share/locale/locale.alias zh_CN.UTF-8
+RUN apt-get update -y && apt-get -y install zip python3-pip vim locales netcat && rm -rf /var/lib/apt/lists/* && localedef -i zh_CN -c -f UTF-8 -A /usr/share/locale/locale.alias zh_CN.UTF-8
 ENV LANG zh_CN.UTF-8
 
 RUN curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && apt-get -y install git-lfs
