@@ -14,3 +14,5 @@ RUN cd /tmp && wget https://github.com/protocolbuffers/protobuf/releases/downloa
 RUN chmod 755 /usr/bin/protoc
 RUN echo 'eval "$(ssh-agent)"' >> /home/node/.bashrc
 RUN echo 'ssh-add /home/node/.ssh/*_rsa' >> /home/node/.bashrc
+
+ENV TZ Asia/Shanghai
