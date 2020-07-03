@@ -14,6 +14,7 @@
         "@theia/editor-preview": "next",
         "@theia/file-search": "next",
         "@theia/getting-started": "next",
+        "@theia/git": "next",
         "@theia/json": "next",
         "@theia/markers": "next",
         "@theia/messages": "next",
@@ -100,7 +101,8 @@
         "vscode-builtin-git-ui": "https://open-vsx.org/api/vscode/git-ui/1.46.1/file/vscode.git-ui-1.46.1.vsix",
         "vscode-builtin-image-preview": "https://open-vsx.org/api/vscode/image-preview/1.46.1/file/vscode.image-preview-1.46.1.vsix",
         "vscode-editorconfig": "https://open-vsx.org/api/EditorConfig/EditorConfig/0.15.1/file/EditorConfig.EditorConfig-0.15.1.vsix",
-        "vscode-go": "https://github.com/golang/vscode-go/releases/download/v0.15.0/go-0.15.0.vsix"
+        "vscode-go": "https://github.com/golang/vscode-go/releases/download/v0.15.0/go-0.15.0.vsix",
+        "vscode-references-view": "https://open-vsx.org/api/ms-vscode/references-view/0.0.47/file/ms-vscode.references-view-0.0.47.vsix"
     },
     "resolutions": {
         "vscode-json-languageserver": "1.2.3",
