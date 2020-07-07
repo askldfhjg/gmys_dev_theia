@@ -100,11 +100,5 @@
         "vscode-editorconfig": "https://open-vsx.org/api/EditorConfig/EditorConfig/0.15.1/file/EditorConfig.EditorConfig-0.15.1.vsix",
         "vscode-go": "https://github.com/golang/vscode-go/releases/download/v0.15.0/go-0.15.0.vsix",
         "vscode-references-view": "https://open-vsx.org/api/ms-vscode/references-view/0.0.47/file/ms-vscode.references-view-0.0.47.vsix"
-    },
-    "resolutions": {
-        "vscode-json-languageserver": "1.2.3",
-        "vscode-languageserver-protocol": "3.15.3",
-        "vscode-languageserver-types": "3.15.1",
-        "**/vscode-json-languageserver/**/vscode-languageserver": "6.1.1"
     }
 }
