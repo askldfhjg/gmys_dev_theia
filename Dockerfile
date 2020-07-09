@@ -84,7 +84,7 @@ ENV TZ Asia/Shanghai
 
 RUN npm install -g gulp layadcc
 
-RUN pip3 install Pillow==6.2.2
+RUN pip3 install Pillow==6.2.2 Jinja2
 
 RUN cd /tmp && wget https://github.com/protocolbuffers/protobuf/releases/download/v3.12.1/protoc-3.12.1-linux-x86_64.zip && unzip protoc-3.12.1-linux-x86_64.zip -d ./protobuf && cd protobuf/bin && cp protoc /usr/bin/protoc && rm -rf /tmp/protobuf/* && chmod 755 /usr/bin/protoc
 
